@@ -1,0 +1,35 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package priorityqueue;
+
+import java.util.PriorityQueue;
+
+public class PriorityQueueExample {
+    public static void main(String[] args) {
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
+
+        // Adding elements to the PriorityQueue
+        pq.add(10);
+        pq.add(20);
+        pq.add(15);
+        pq.add(30);
+        pq.add(5);
+
+        System.out.println("PriorityQueue elements: " + pq);
+
+        // Accessing the head element
+        System.out.println("Head element: " + pq.peek());
+
+        // Removing elements
+        System.out.println("Removed element: " + pq.poll());
+        System.out.println("PriorityQueue after removal: " + pq);
+
+        // Iterating over elements
+        System.out.println("Elements in PriorityQueue:");
+        for (int element : pq) {
+            System.out.print(element + " ");
+        }
+    }
+}
